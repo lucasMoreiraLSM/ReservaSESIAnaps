@@ -1,0 +1,28 @@
+Informações de atualização para versões anteriores do MRBS:
+--------------------------------------------------
+
+Se você estiver atualizando do MRBS 1.2-pre3 ou posterior, o Reserva SESI irá
+executa automaticamente todas as atualizações necessárias do banco de dados quando é o primeiro
+corre. Ele solicitará um nome de usuário e senha de banco de dados (não MRBS)
+com direitos para criar e alterar tabelas.
+
+Seria uma precaução sensata fazer um backup do seu banco de dados antes
+a atualização.
+
+1. Faça um backup do seu banco de dados, apenas no caso
+2. Faça uma cópia de backup do diretório mrbs existente no servidor da web
+3. Carregue todos os arquivos e diretórios, exceto o arquivo de configuração, na web
+   diretório do release para o servidor, substituindo os arquivos existentes.
+4. Execute o MRBS. Você será solicitado a fornecer um nome de usuário do banco de dados (observe o banco de dados, não o MRBS)
+   e senha.
+
+As atualizações do banco de dados MRBS geralmente são compatíveis com versões anteriores,
+para que você ainda possa executar a versão antiga do MRBS no diretório
+novo esquema de banco de dados. Isso permitirá que você instale a nova versão do MRBS
+em um diretório separado enquanto você o configura e testa. Quando você está feliz
+com o novo lançamento, você pode mudar o diretório para ser sua produção
+diretório.
+
+No entanto, existem algumas exceções a essa compatibilidade com versões anteriores, a saber:
+as seguintes transições:
+
